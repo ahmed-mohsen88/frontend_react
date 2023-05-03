@@ -22,6 +22,9 @@ const Skills = () => {
       setSkills(data);
     });
   }, []);
+  function order(a, b) {
+    return a.year < b.year ? -1 : a.year > b.year ? 1 : 0;
+  }
 
   return (
     <>
@@ -47,7 +50,7 @@ const Skills = () => {
           ))}
         </motion.div>
         <div className="app__skills-exp">
-          {experiences.map((experience) => (
+          {experiences.sort(order).map((experience) => (
             <motion.div className="app__skills-exp-item" key={experience.year}>
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.year}</p>

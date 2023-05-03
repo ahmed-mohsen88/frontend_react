@@ -33,8 +33,10 @@ import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
+import main from "../assets/—Pngtree—web development carton box_5692290.png";
 
 export default {
+  main,
   email,
   mobile,
   api,
